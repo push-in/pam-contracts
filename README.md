@@ -52,7 +52,7 @@ This package intentionally contains no router, server, or application implementa
 ## Documentation and support
 
 - [PAM introduction](https://push-in.github.io/pam-docs/introduction/)
-- [Package ecosystem](https://push-in.github.io/pam-docs/packages/ecosystem/)
+- [Package ecosystem](https://push-in.github.io/pam-docs/packages/overview/)
 - [Runtime compatibility](https://push-in.github.io/pam-docs/runtime/compatibility/)
 - [Report an issue](https://github.com/push-in/pam-core-api/issues)
 
