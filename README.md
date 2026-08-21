@@ -1,11 +1,11 @@
-# pushinbr/pam-core-api
+# pushinbr/pam-contracts
 
 Small, versioned contracts for packages that extend Pam. It contains the HTTP
 application and middleware contracts, service providers, stability values and
 native runtime compatibility checks. It does not contain a router or server.
 
 ```bash
-pam composer require pushinbr/pam-core-api
+pam composer require pushinbr/pam-contracts
 ```
 
 See PAM's [package model](https://github.com/push-in/pam/blob/main/docs/packages.md).
@@ -18,7 +18,7 @@ modify, and distribute this package for any purpose, including commercially.
 
 ## Recommended PAM workflow
 
-Most applications receive this contract package transitively. Extension authors can install it explicitly with `pam composer require pushinbr/pam-core-api`.
+Most applications receive this contract package transitively. Extension authors can install it explicitly with `pam composer require pushinbr/pam-contracts`.
 
 Run `pam doctor` after dependency changes and before creating a release. The project remains a normal Composer project with a standard manifest, lockfile, PSR-4 autoloading, and `vendor/autoload.php`.
 
@@ -54,6 +54,6 @@ This package intentionally contains no router, server, or application implementa
 - [PAM introduction](https://push-in.github.io/pam-docs/introduction/)
 - [Package ecosystem](https://push-in.github.io/pam-docs/packages/overview/)
 - [Runtime compatibility](https://push-in.github.io/pam-docs/runtime/compatibility/)
-- [Report an issue](https://github.com/push-in/pam-core-api/issues)
+- [Report an issue](https://github.com/push-in/pam-contracts/issues)
 
 Report security vulnerabilities through GitHub private vulnerability reporting or the PAM security policy, not a public issue.
