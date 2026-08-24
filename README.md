@@ -1,26 +1,51 @@
-# pushinbr/pam-contracts
+<!-- pam:product-page:start -->
+<div align="center">
+
+# PAM Contracts
+
+**Depend on the extension boundary—not an entire framework.**
+
+Small, versioned interfaces for applications, middleware, providers, stability, and runtime compatibility.
+
+[![Release](https://img.shields.io/github/v/release/push-in/pam-contracts?style=flat-square&label=stable)](https://github.com/push-in/pam-contracts/releases)
+![PHP](https://img.shields.io/badge/PHP-8.5-777BB4?style=flat-square&logo=php&logoColor=white)
+![License](https://img.shields.io/github/license/push-in/pam-contracts?style=flat-square)
+
+**[Documentation](https://push-in.github.io/pam-docs/packages/overview/) · [Why this exists](#why-this-exists) · [What you can build](#what-you-can-build) · [Quick start](#quick-start) · [Issues](https://github.com/push-in/pam-contracts/issues)**
+
+</div>
+
+---
+
+## Why this exists
+
+Small, versioned interfaces for applications, middleware, providers, stability, and runtime compatibility.
+
+| | |
+| --- | --- |
+| **Role** | Foundation contract |
+| **Execution path** | Strict PHP 8.5 interfaces |
+| **This repository owns** | Stable extension contracts shared across PAM packages |
+| **Boundary** | No router, server, framework, or application implementation |
+
+## What you can build
+
+- Publishing framework-independent PAM extensions
+- Testing runtime compatibility explicitly
+- Sharing middleware and provider contracts without pulling a router
+
+## Quick start
+
+```bash
+pam composer require pushinbr/pam-contracts
+```
+
+The **[PAM documentation](https://push-in.github.io/pam-docs/packages/overview/)** covers prerequisites, production setup, and the complete workflow. PAM projects keep normal manifests and lockfiles; product features stay in the package that owns them.
+<!-- pam:product-page:end -->
 
 Small, versioned contracts for packages that extend Pam. It contains the HTTP
 application and middleware contracts, service providers, stability values and
 native runtime compatibility checks. It does not contain a router or server.
-
-## Start here
-
-PAM Contracts is a Composer package for the PAM Runtime; it is not a standalone
-runtime. Install PAM first, open your application directory, and add the
-package through PAM's Composer toolchain:
-
-```bash
-curl --proto '=https' --proto-redir '=https' --tlsv1.2 \
-    --connect-timeout 15 --max-time 60 --max-filesize 1048576 -fsSL \
-    https://github.com/push-in/pam/releases/latest/download/install.sh | sh
-
-pam doctor
-cd my-app
-pam composer require pushinbr/pam-contracts
-```
-
-See PAM's [package model](https://github.com/push-in/pam/blob/main/docs/packages.md).
 
 ## License
 
